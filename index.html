@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy Star Каталог</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    
+    <div class="modal fade" id="enterModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Вход</h5>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button> -->
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="mb-2">
+                            <input type="text" placeholder="Логин" id="loginInput" name="login" class="form-control rounded-0 border-dark">
+                            <div class="invalid-feedback" id="loginError">Неверный логин</div>
+                        </div>
+                        <div class="mb-2">
+                            <input type="password" placeholder="Пароль" id="passwordInput" name="pass" class="form-control rounded-0 border-dark">
+                            <div class="invalid-feedback" id="passwordError">Неверный пароль</div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark rounded-0" data-bs-dismiss="modal">Отмена</button>
+                    <button type="button" class="btn btn-dark rounded-0">Войти</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Регистрация</h5>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button> -->
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="mb-2">
+                            <input type="text" placeholder="Имя" id="nameInput" name="name" class="form-control rounded-0 border-dark">
+                            <div class="invalid-feedback" id="nameError">Введите имя</div>
+                        </div>
+                        <div class="mb-2">
+                            <input type="text" placeholder="Фамилия" id="surnameInput" name="surname" class="form-control rounded-0 border-dark">
+                            <div class="invalid-feedback" id="surnameError">Введите фамилию</div>
+                        </div>
+                        <div class="mb-2">
+                            <input type="text" placeholder="Отчество (необязательно)" id="patronymicInput" name="patronymic" class="form-control rounded-0 border-dark">
+                        </div>
+                        <div class="mb-2">
+                            <input type="text" placeholder="Логин" id="loginInput" name="login" class="form-control rounded-0 border-dark">
+                            <div class="invalid-feedback" id="loginError">Введите логин</div>
+                        </div>
+                        <div class="mb-2">
+                            <input type="email" placeholder="Email" id="emailInput" name="email" class="form-control rounded-0 border-dark">
+                            <div class="invalid-feedback" id="emailError">Введите почту</div>
+                        </div>
+                        <div class="mb-2">
+                            <input type="password" placeholder="Пароль" class="form-control rounded-0 border-dark">
+                            <div class="invalid-feedback" id="passwordError">Введите пароль</div>
+                        </div>
+                        <div class="mb-2">
+                            <input type="password" placeholder="Повторите пароль" class="form-control rounded-0 border-dark">
+                            <div class="invalid-feedback" id="repPasswordError">Пароли не совпадают</div>
+                        </div>
+                        <div class="mb-2">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">Согласие с правилами регистрации</label>
+                            <div class="invalid-feedback" id="checkError">Необходимо соглашение</div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark rounded-0" data-bs-dismiss="modal">Отмена</button>
+                    <button type="button" class="btn btn-dark rounded-0">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="page">
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><img src="img/logo.png" width="128" alt="Copy Star"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutus.html">О нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Каталог</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="adress.html">Где нас найти?</a>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-outline-dark me-2 rounded-0" data-bs-toggle="modal" data-bs-target="#enterModal">Вход</button>
+                        <button type="button" class="btn btn-dark rounded-0" data-bs-toggle="modal" data-bs-target="#registerModal">Регистрация</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <main>
+            <section id="background">
+            </section>
+        
+            <section id="catalog" class="mt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4 col-md-4 col-xl-4">
+                            <h1><b>Каталог</b></h1>
+                        </div>
+                        <div class="col-0 col-md-4 col-xl-5">
+
+                        </div>
+                        <div class="col-8 col-md-4 col-xl-3">
+                            <form class="d-flex mb-3 mb-xl-0" role="search">
+                                <input type="search" placeholder="🔎 поиск" class="form-control border-dark" style="width: auto">
+                            </form>
+                        </div>
+
+                        
+                    </div>
+                </div>
+        
+                <hr class="mt-0">
+        
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h4 class="mb-4"><b>Категории</b></h4>
+                            <ul class="list-group mb-4">
+                                <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">Лазерные принтеры</a></li>
+                                <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">Струйные принтеры</a></li>
+                                <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">Термопринтеры</a></li>
+                            </ul>
+                            <label for="sort">Сортировать по:</label>
+                            <select id="sort" class="form-select">
+                                <option selected>По новизне</option>
+                                <option value="1">По году производства</option>
+                                <option value="2">По наименованию</option>
+                                <option value="3">По цене</option>
+                            </select>
+                        </div>
+        
+                        <div class="col-lg-9">
+                            <h4 class="mb-4 mt-3 mt-xl-0"><b>Все товары</b></h4>
+                            <div class="row">
+                                <div class="col-xl-4 col-md-6">
+                                    <div class="card border-0">
+                                        <div class="card-body">
+                                            <div class="text-center">
+                                                <a href="item-hp1.html">
+                                                    <img src="img/hp1.webp" alt="hp1" class="p-2">
+                                                </a>
+                                            </div>
+        
+                                            <h4><b>31 999 ₽</b></h4>
+        
+                                            <p class="card-text">
+                                                Лазерное МФУ HP Neverstop Laser 1200w 4RY26A
+                                            </p>
+                                            <a href="cart.html"><button type="button" class="btn btn-dark">В корзину</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="col-xl-4 col-md-6">
+                                    <div class="card border-0">
+                                        <div class="card-body">
+                                            <div class="text-center">
+                                                <img src="img/canon1.webp" alt="canon1" class="p-2">
+                                            </div>
+        
+                                            <h4><b>38 999 ₽</b></h4>
+        
+                                            <p class="card-text">
+                                                Струйное МФУ Canon PIXMA G640
+                                            </p>
+                                            <button type="button" class="btn btn-dark">В корзину</button>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="col-xl-4 col-md-6">
+                                    <div class="card border-0">
+                                        <div class="card-body">
+                                            <div class="text-center">
+                                                <img src="img/epson1.webp" alt="epson1" class="p-2">
+                                            </div>
+        
+                                            <h4><b>17 599 ₽</b></h4>
+        
+                                            <p class="card-text">
+                                                Термопринтер Epson LabelWorks LW-600P
+                                            </p>
+                                            <button type="button" class="btn btn-dark">В корзину</button>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="col-xl-4 col-md-6">
+                                    <div class="card border-0">
+                                        <div class="card-body">
+                                            <div class="text-center">
+                                                <img src="img/hp2.webp" alt="hp2" class="p-3">
+                                            </div>
+        
+                                            <h4><b>9 999 ₽</b></h4>
+        
+                                            <p class="card-text">
+                                                Струйное МФУ HP DeskJet 2710 5AR83B
+                                            </p>
+                                            <button type="button" class="btn btn-dark">В корзину</button>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="col-xl-4 col-md-6">
+                                    <div class="card border-0">
+                                        <div class="card-body">
+                                            <div class="text-center">
+                                                <img src="img/pantum1.webp" alt="pantum1" class="p-3">
+                                            </div>
+        
+                                            <h4><b>12 799 ₽</b></h4>
+        
+                                            <p class="card-text">
+                                                Лазерное МФУ Pantum M6500
+                                            </p>
+                                            <button type="button" class="btn btn-dark my-4">В корзину</button>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="col-xl-4 col-md-6">
+                                    <div class="card border-0">
+                                        <div class="card-body">
+                                            <div class="text-center">
+                                                <img src="img/brother1.webp" alt="brother1" class="p-3">
+                                            </div>
+        
+                                            <h4><b>19 999 ₽</b></h4>
+        
+                                            <p class="card-text">
+                                                Струйное МФУ Brother DCP-T220 InkBenefit Plus
+                                            </p>
+                                            <button type="button" class="btn btn-dark">В корзину</button>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <hr class="mt-4">
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    
+        <footer>
+            <div class="container">
+                <div class="d-flex flex-wrap justify-content-between align-items-center py-3">
+                    <p class="col-md-4 mb-0">© 2022 Copy Star</p>
+                    <a href="index.html"><img src="img/logo2.png" width="128" alt="Copy Star"></a>
+                    <ul class="nav col-md-4 justify-content-end">
+                        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-white">Каталог</a></li>
+                        <li class="nav-item"><a href="aboutus.html" class="nav-link px-2 text-white">О нас</a></li>
+                        <li class="nav-item"><a href="adress.html" class="nav-link px-2 text-white">Где нас найти?</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

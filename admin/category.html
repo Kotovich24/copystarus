@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        body {
+            background: #f2f2f2;
+        }
+        #admin_order {
+            padding-left: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Добавить категорию</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="">
+                        <div class="modal-body">
+                            <div class="mb-1">
+                                <input type="text" name="itemName" placeholder="Название новой категории" id="itemInput" class="form-control">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Отмена</button>
+                    <button type="button" class="btn btn-success">Добавить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Изменить</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="text-center">
+                                    <h5><b>Старые данные</b></h5>
+                                    <p>Лазерные</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-center">
+                                    <h5><b>Новые данные</b></h5>
+                                    <input type="text" class="form-control" placeholder="Название категории">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Отмена</button>
+                    <button type="button" class="btn btn-success">Изменить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="delModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Удалить</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+
+                <div class="modal-body">
+                    <h5>Вы действительно хотите удалить категорию: Лазерные?</h5>
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Отмена</button>
+                    <button type="button" class="btn btn-danger">Удалить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <aside class="position-fixed">
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px; min-height: 100vh;">
+            <div class="text-center">
+                <a href="index.html">
+                    <img src="../img/logo2.png" height="24" alt="logo">
+                </a>
+            </div>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link text-white">Заказы <span class="badge text-bg-light">1</span></a>
+                </div>
+                <div class="nav-item">
+                    <a href="list.html" class="nav-link text-white">Товары</a>
+                </div>
+                <div class="nav-item">
+                    <a href="category.html" class="nav-link text-white">Категории</a>
+                </div>
+            </ul>
+            <hr>
+            <div class="dropdown">
+                <img src="../img/Moderator).jpeg" alt="" width="32" height="32" class="rounded-circle me-2">
+                <strong>Moderator)</strong>
+            </div>
+        </div>
+    </aside>
+
+    <section id="admin_order" class="pt-5">
+        <div class="container">
+            <h2><b>Управление категориями</b></h2>
+            <div class="bg-white shadow-sm p-4 mt-4">
+                <div class="row">
+                    <div class="col mb-2">
+                        <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#addModal">Добавить</button>
+                    </div>
+
+                    <div class="row">
+                        <div class="col 6 border">
+                            <div class="col p-3">
+                                <div class="row align-items-center">
+                                    <div class="col-4 text-center"><b>№</b></div>
+                                    <div class="col-4 text-center"><b>Название</b></div>
+                                </div>
+                                <hr>
+                                <div class="row align-items-center">
+                                    <div class="col-4 text-center">1</div>
+                                    <div class="col-4 text-center">Лазерные</div>
+                                    <div class="col-4 text-end">
+                                        <button type="button" class="btn btn-primary btn-sm px-1" data-bs-toggle="modal" data-bs-target="#editModal" >⚙️</button>
+                                        <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#delModal" >X</button>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row align-items-center">
+                                    <div class="col-4 text-center">2</div>
+                                    <div class="col-4 text-center">Струйные</div>
+                                    <div class="col-4 text-end">
+                                        <button type="button" class="btn btn-primary btn-sm px-1" data-bs-toggle="modal" data-bs-target="" >⚙️</button>
+                                        <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="" >X</button>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row align-items-center">
+                                    <div class="col-4 text-center">3</div>
+                                    <div class="col-4 text-center">Термопринтеры</div>
+                                    <div class="col-4 text-end">
+                                        <button type="button" class="btn btn-primary btn-sm px-1" data-bs-toggle="modal" data-bs-target="" >⚙️</button>
+                                        <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="" >X</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

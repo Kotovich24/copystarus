@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+*:hover, *:focus, *:active, .nono {
+    outline: none;
+    box-shadow: none !important;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+header .nav-link{
+    font-size: 18px;
+    font-weight: 800;
+    color: rgb(0,0,0,0.6);
+}
+
+
+#registerModal input:checked, #cart input:checked {
+    background-color: black;
+}
+
+#background {
+    background: url('../img/wallpaper.jpg') 100% 30% no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    display: block;
+    height: 600px;
+}
+
+#catalog .list-group-item {
+    transition: .3s;
+}
+#catalog .list-group-item:hover {
+    background-color: rgb(213, 255, 255);
+}
+#catalog hr {
+    size: 5rem;
+}
+#catalog img {
+    height: 256px;
+}
+
+footer {
+    background-color: #202020;
+    background-size: 100%;
+    color: #fff;
+}
+
+.box {
+    width: auto;
+    border: 0px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#cart .box {
+    background-color: #fff;
+}
+#order .box {
+    background-color: #fff;
+}
+#admin_order .box {
+    background-color: #fff;
+    border-radius: 0px;
+}
+
+#user_order .box {
+    background-color: #fff;
+    border-radius: 0;
+}
+
+#succ .box {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.btnka {
+    width: 100%;
+}
+
+#buy {
+    position: fixed;
+    height: 100%;
+}

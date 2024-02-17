@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        body {
+            background: #f2f2f2;
+        }
+        #admin_order {
+            padding-left: 300px;
+        }
+    </style>
+</head>
+<body>
+    <aside class="position-fixed">
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px; min-height: 100vh;">
+            <div class="text-center">
+                <a href="index.html">
+                    <img src="../img/logo2.png" height="24" alt="logo">
+                </a>
+            </div>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link text-white">Заказы <span class="badge text-bg-light">1</span></a>
+                </div>
+                <div class="nav-item">
+                    <a href="list.html" class="nav-link text-white">Товары</a>
+                </div>
+                <div class="nav-item">
+                    <a href="category.html" class="nav-link text-white">Категории</a>
+                </div>
+            </ul>
+            <hr>
+            <div class="dropdown">
+                <img src="../img/Moderator).jpeg" alt="" width="32" height="32" class="rounded-circle me-2">
+                <strong>Moderator)</strong>
+            </div>
+        </div>
+    </aside>
+
+    <section id="admin_order" class="pt-5">
+        <div class="container">
+            <h2><b>Управление заказами</b> <span class="badge text-bg-danger">1</span></h2>
+            <div class="col text-center">
+                <div class="box shadow-sm">
+                    <div class="row align-items-center justify-content-center mb-4">
+                        <div class="col-1 text-center"><b>№</b></div>
+                        <div class="col-2 text-center"><b>Дата / Время</b></div>
+                        <div class="col-3 text-center"><b>ФИО заказчика</b></div>
+                        <div class="col-2 text-center"><b>Количество товаров</b></div>
+                        <div class="col-2 text-center"><b>Статус</b></div>
+                        <div class="col-2"></div>
+                    </div>
+
+                    <div class="row my-2 align-items-center">
+                        <div class="col-1 text-center">1</div>
+                        <div class="col-2 text-center"><b>07.10.2022 10:03</b></div>
+                        <div class="col-3 text-center">LaCopro Mujila Fernandoz</div>
+                        <div class="col-2 text-center">1</div>
+                        <div class="col-2 text-center"><b class="text-success">Новый</b></div>
+                        <div class="col-2"><a href="order.html" class="btn btn-outline-danger" role="button">Просмотреть заказ</a></div>
+                    </div>
+                    <hr>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>

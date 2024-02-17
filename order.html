@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-white shadow">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><img src="img/logo.png" width="128" alt="Copy Star"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutus.html">О нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Каталог</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="adress.html">Где нас найти?</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="order">
+                <div class="container mt-5">
+                    <h3><b>Оформление заказа</b></h3>
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <div class="box">
+                                <h4><b>Способ получения</b></h4>
+                                <div class="text-center mt-4">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-12">
+                                            <input type="radio" class="btn-check" name="bombom" id="selftake" autocomplete="off">
+                                            <label class="nono btnka btn btn-outline-dark rounded-1 px-5" for="selftake">Самовывоз</label>
+
+                                        </div>
+                                        <div class="col-sm-6 col-12 mt-3 mt-sm-0">
+                                            <input type="radio" class="btn-check" name="bombom" id="delivery" autocomplete="off" checked>
+                                            <label class="nono btnka btn btn-outline-dark rounded-1 px-5" for="delivery">Доставка</label>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box mt-4">
+                                <h4><b>Адрес</b></h4>
+                                <input type="text" class="form-control rounded-1 border-dark mt-4" placeholder="Адрес">
+                            </div>
+
+                            <div class="box mt-4">
+                                <h4><b>Способ оплаты</b></h4>
+                                <div class="mt-4">
+                                    <input type="radio" class="btn-check" name="options-outlined" id="online" autocomplete="off" checked>
+                                    <label class="nono btnka btn btn-outline-dark rounded-1 px-5" for="online">Онлайн по карте</label>
+
+                                    <input type="radio" class="btn-check" name="options-outlined" id="offline" autocomplete="off">
+                                    <label class="nono btnka btn btn-outline-dark rounded-1 mt-3 px-5" for="offline">При получении</label>
+                                </div>
+                            </div>
+
+                            <div class="box mt-4">
+                                <h4><b>Комментарий к заказу</b></h4>
+                                <div class="mt-4">
+                                    <textarea class="form-control border-dark rounded-1" style="resize: none;" placeholder="Комментарий к заказу" rows="4"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="box mt-4 mb-5">
+                                <h4><b>Подтверждение покупки</b></h4>
+                                <input type="password" class="form-control border-dark rounded-1 mt-4" placeholder="Пароль">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="box">
+                                <h5><b>Заказ</b></h5>
+                                <div class="text-center">
+                                    <img src="img/hp1.webp" class="shadow-lg border-1 rounded-3" height="128" alt="hp1">
+                                </div>
+                                <p class="mt-4"><b>Лазерное МФУ HP Neverstop Laser 1200w 4RY26A</b></p>
+                                
+                                <div class="mt-4">
+                                    <h5><b>К оплате</b></h5>
+                                    <div class="row">
+                                        <div class="col text-start mt-2">
+                                            <p><b>1 товар: </b></p>
+                                            <h5><b>Итого: </b></h5>
+                                        </div>
+                                        <div class="col text-end mt-2">
+                                            <p><b>31 999 ₽</b></p>
+                                            <h5><b>31 999 ₽</b></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <a href="successfull.html"><button type="button" class="btn btnka btn-danger rounded-1 mt-3">Оплатить</button></a>
+                                    <p class="text-muted mt-3" style="font-size: 12px;">
+                                        Продолжая оформление заказа, я соглашаюсь с условиями оферты и даю согласие на обработку своих персональных данных.
+                                        В соответствии с ФЗ № 54-ФЗ кассовый чек при онлайн-оплате на сайте будет предоставлен в электронном виде на указанный при оформлении заказа номер телефона.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="box mt-4">
+                                <h5><b>Подарок 🎁</b></h5>
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <img src="img/paper.webp" height="64" alt="paper">
+                                    </div>
+                                    <div class="col">
+                                        <p style="font-size: 12px;">Бумага офисная для принтера "Svetocopy", 500 листов, А4</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="d-flex flex-wrap justify-content-between align-items-center py-3">
+                    <p class="col-md-4 mb-0">© 2022 Copy Star</p>
+                    <a href="index.html"><img src="img/logo2.png" width="128" alt="Copy Star"></a>
+                    <ul class="nav col-md-4 justify-content-end">
+                        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-white">Каталог</a></li>
+                        <li class="nav-item"><a href="aboutus.html" class="nav-link px-2 text-white">О нас</a></li>
+                        <li class="nav-item"><a href="adress.html" class="nav-link px-2 text-white">Где нас найти?</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

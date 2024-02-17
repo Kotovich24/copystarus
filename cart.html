@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        body {
+            background: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-white shadow">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><img src="img/logo.png" width="128" alt="Copy Star"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutus.html">О нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Каталог</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="adress.html">Где нас найти?</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="cart">
+                <div class="container">
+                    <div class="row">
+                        <h1 class="mt-5"><b>Корзина</b> <span class="text-muted" style="font-size: 24px;">1</span></h1>
+                        <div class="row">
+                            <div class="col-xl-9">
+                                <div class="box">
+                                    <div class="row">
+                                        <div class="col-xl-2 col-md-2 col-12 text-center">
+                                            <img src="img/hp1.webp" alt="hp1" height="128">
+                                        </div>
+                                        <div class="col-xl-6 col-md-8 col-12 text-center">
+                                            <h5><b>Лазерное МФУ HP Neverstop Laser 1200w 4RY26A</b></h5>
+                                        </div>
+                                        <div class="col-xl-2 col-md-2 col-12 text-center">
+                                            <button type="button" class="btn"><b>-</b></button>
+                                            <span>1</span>
+                                            <button type="button" class="btn"><b>+</b></button>
+                                            <br>
+                                            <a href="#" class="link-dark text-decoration-none text-muted">Удалить</a>
+                                        </div>
+                                        <div class="col-xl-2 col-12 text-start">
+                                            <h4><b>31 999 ₽</b></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 mt-xl-0 mt-3 mb-5 mb-xl-0">
+                                <div class="box">
+                                    <h5 class="mb-3"><b>Детали заказа</b></h5>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p><b>1 товар:</b></p>
+                                            <h5><b>Итого:</b></h5>
+                                        </div>
+                                        <div class="col text-end">
+                                            <p>31 999 ₽</p>
+                                            <h5><b>31 999 ₽</b></h5>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="order.html"><button type="button" class="btn btn-danger mt-5  mb-3 rounded-1 btn-lg">Сформировать заказ</button></a>
+                                    </div>
+                                    
+                                    <hr>
+
+                                    <div class="text-center mt-3">
+                                        <button type="button" class="btn btn-outline-danger rounded-1 px-4 mt-3 mb-3">В рассрочку или кредит</button>
+                                    </div>
+                                    
+                                    <div class="text-start text-muted">
+                                        <p><b>%</b> Кредит <b>от 3 125 ₽/мес</b></p>
+                                        <p><b>%</b> Рассрочка <b>от 1 334 ₽/мес</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="d-flex flex-wrap justify-content-between align-items-center py-3">
+                    <p class="col-md-4 mb-0">© 2022 Copy Star</p>
+                    <a href="index.html"><img src="img/logo2.png" width="128" alt="Copy Star"></a>
+                    <ul class="nav col-md-4 justify-content-end">
+                        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-white">Каталог</a></li>
+                        <li class="nav-item"><a href="aboutus.html" class="nav-link px-2 text-white">О нас</a></li>
+                        <li class="nav-item"><a href="adress.html" class="nav-link px-2 text-white">Где нас найти?</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

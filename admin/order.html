@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        body {
+            background: #f2f2f2;
+        }
+        #user_order {
+            padding-left: 300px;
+        }
+    </style>
+</head>
+<body>
+    <aside class="position-fixed">
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px; min-height: 100vh;">
+            <div class="text-center">
+                <a href="index.html">
+                    <img src="../img/logo2.png" height="24" alt="logo">
+                </a>
+            </div>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link text-white">Заказы <span class="badge text-bg-light">1</span></a>
+                </div>
+                <div class="nav-item">
+                    <a href="list.html" class="nav-link text-white">Товары</a>
+                </div>
+                <div class="nav-item">
+                    <a href="category.html" class="nav-link text-white">Категории</a>
+                </div>
+            </ul>
+            <hr>
+            <div class="dropdown">
+                <img src="../img/Moderator).jpeg" alt="" width="32" height="32" class="rounded-circle me-2">
+                <strong>Moderator)</strong>
+            </div>
+        </div>
+    </aside>
+
+    <section id="user_order" class="pt-5">
+        <div class="container">
+            <h2><b>Заказ №1 от 07.10.2022 10:03</b></h2>
+            <div class="col mt-4">
+                <div class="box shadow-sm">
+                    <div class="row mb-4">
+                        <div class="col-6">
+                            <p><b>Тип получения: </b>Доставка</p>
+                            <p><b>Адрес доставки: </b>РБ, Уфа, проспект Октября, где-то рядом с ГДК</p> 
+                            <p><b>Тип оплаты: </b>Наличными при получении</p>
+                            <p><b>Комментарий: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe optio repellat ullam excepturi debitis vel error officiis ab aut voluptatem facere maiores molestiae laudantium atque accusamus quasi, quibusdam, ipsum quisquam.</p>
+
+                            <p class="mt-5"><b>Статус: <span class="text-success">Новый</span></b></p>
+                            <select id="sort" class="form-select">
+                                <option selected>По новизне</option>
+                                <option value="1">Новый</option>
+                                <option value="2">В доставке</option>
+                                <option value="3">Отменен</option>
+                            </select>
+                            <button type="button" class="btn btn-danger mt-2">Сменить статус</button>
+                        </div>
+
+                        <div class="col-6">
+                            <div style="background-color: #f2f2f2; padding: 20px;">
+                                <div class="row">
+                                    <div class="col-1 text-center">
+                                        <p><b>№</b></p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <p><b>Изображение</b></p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <p><b>Название</b></p>
+                                    </div>
+                                    <div class="col-2 text-center">
+                                        <p><b>Количество</b></p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <p><b>Цена</b></p>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-3 mb-4">
+                                    <div class="col-1 text-center">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <img src="../img/hp1.webp" class="shadow border-1 rounded-3" height="96" alt="hp1">
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <p>HP Neverstop Laser 1200w 4RY26A</p>
+                                    </div>
+                                    <div class="col-2 text-center">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <p>31 999 ₽</p>
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <div class="text-end">
+                                    <h5><b>Общая сумма: </b>31 999 ₽</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>

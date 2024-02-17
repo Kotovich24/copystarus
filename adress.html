@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Где нас найти?</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="modal fade" id="enterModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Вход</h5>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button> -->
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="mb-2">
+                            <input type="text" placeholder="Логин" id="loginInput" name="login" class="form-control rounded-0 border-dark">
+                            <div class="invalid-feedback" id="loginError">Неверный логин</div>
+                        </div>
+                        <div class="mb-2">
+                            <input type="password" placeholder="Пароль" id="passwordInput" name="pass" class="form-control rounded-0 border-dark">
+                            <div class="invalid-feedback" id="passwordError">Неверный пароль</div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark rounded-0" data-bs-dismiss="modal">Отмена</button>
+                    <button type="button" class="btn btn-dark rounded-0">Войти</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Регистрация</h5>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button> -->
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="mb-2">
+                            <input type="text" placeholder="Имя" id="nameInput" name="name" class="form-control rounded-0 border-dark">
+                            <div class="invalid-feedback" id="nameError">Введите имя</div>
+                        </div>
+                        <div class="mb-2">
+                            <input type="text" placeholder="Фамилия" id="surnameInput" name="surname" class="form-control rounded-0 border-dark">
+                            <div class="invalid-feedback" id="surnameError">Введите фамилию</div>
+                        </div>
+                        <div class="mb-2">
+                            <input type="text" placeholder="Отчество (необязательно)" id="patronymicInput" name="patronymic" class="form-control rounded-0 border-dark">
+                        </div>
+                        <div class="mb-2">
+                            <input type="text" placeholder="Логин" id="loginInput" name="login" class="form-control rounded-0 border-dark">
+                            <div class="invalid-feedback" id="loginError">Введите логин</div>
+                        </div>
+                        <div class="mb-2">
+                            <input type="email" placeholder="Email" id="emailInput" name="email" class="form-control rounded-0 border-dark">
+                            <div class="invalid-feedback" id="emailError">Введите почту</div>
+                        </div>
+                        <div class="mb-2">
+                            <input type="password" placeholder="Пароль" class="form-control rounded-0 border-dark">
+                            <div class="invalid-feedback" id="passwordError">Введите пароль</div>
+                        </div>
+                        <div class="mb-2">
+                            <input type="password" placeholder="Повторите пароль" class="form-control rounded-0 border-dark">
+                            <div class="invalid-feedback" id="repPasswordError">Пароли не совпадают</div>
+                        </div>
+                        <div class="mb-2">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">Согласие с правилами регистрации</label>
+                            <div class="invalid-feedback" id="checkError">Необходимо соглашение</div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark rounded-0" data-bs-dismiss="modal">Отмена</button>
+                    <button type="button" class="btn btn-dark rounded-0">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><img src="img/logo.png" width="128" alt="Copy Star"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutus.html">О нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Каталог</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="adress.html">Где нас найти?</a>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-outline-dark me-2 rounded-0" data-bs-toggle="modal" data-bs-target="#enterModal">Вход</button>
+                        <button type="button" class="btn btn-dark rounded-0" data-bs-toggle="modal" data-bs-target="#registerModal">Регистрация</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="map">
+                <div class="container">
+                    <div class="row mt-5">
+                        <div class="col-12 col-xxl-5">
+                            <h2 class="mb-3"><b>Наши контактные данные:</b></h2>
+                            <h5><b>Адрес:</b><br> ул. проспект Октября, 93/3, Уфа, Респ. Башкортостан, 450075</h5>
+                            <h5><b>Номер телефона:</b><br> +7(917)203-48-28 <br> 403-72-27</h5>
+                            <h5><b>Email:</b><br> Mujila-costa2004@mail.ru</h5>
+                        </div>
+                        <div class="col-12 col-xxl-7">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d575.2737407077774!2d56.02771225548066!3d54.77829765950085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43d939d6a6b112bb%3A0x14624aa998d62fbf!2z0YPQuy4g0L_RgC3Rgi4g0J7QutGC0Y_QsdGA0Y8sIDkzLzMsINCj0YTQsCwg0KDQtdGB0L8uINCR0LDRiNC60L7RgNGC0L7RgdGC0LDQvSwgNDUwMDc1!5e0!3m2!1sru!2sru!4v1664952575621!5m2!1sru!2sru" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+    
+        <footer>
+            <div class="container">
+                <div class="d-flex flex-wrap justify-content-between align-items-center py-3">
+                    <p class="col-md-4 mb-0">© 2022 Copy Star</p>
+                    <a href="index.html"><img src="img/logo2.png" width="128" alt="Copy Star"></a>
+                    <ul class="nav col-md-4 justify-content-end">
+                        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-white">Каталог</a></li>
+                        <li class="nav-item"><a href="aboutus.html" class="nav-link px-2 text-white">О нас</a></li>
+                        <li class="nav-item"><a href="adress.html" class="nav-link px-2 text-white">Где нас найти?</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
